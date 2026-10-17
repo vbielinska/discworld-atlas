@@ -19,7 +19,7 @@
     <meta property="og:site_name" content="Discworld Atlas">
     <meta property="og:locale" content="en">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon-32x32.png">
 </head>
 
 <body>
@@ -46,59 +46,62 @@
                 surprisingly curious personality.
                 Countless stories await beyond the horizon. The only question is: where will your journey begin?</p>
 
-            <img src="assets/images/Discworld.png"
+            <img src="assets/images/DiscworldСircle.png"
                 alt="The Discworld resting on the backs of three elephants standing on a turtle" width="300">
         </section>
-        <section id="characters" class="character-selection"  aria-labelledby="characters-title">
+        <section id="characters" class="character-selection" aria-labelledby="characters-title">
             <h2>Choose your Guide</h2>
-            <p>Countless adventures lie ahead, but no traveller should journey alone. Four paths lie before you. Choose
+            <p>Countless adventures lie ahead, but no traveller should journey alone.
+                Four paths lie before you. Choose
                 your guide wisely, for each has a different tale to tell.</p>
+            <div class="grid-container-characters">
+                <article class="guide-card">
+                    <a class="guide-card__link" href="#rincewind"><img src="assets/images/Rincewind.png"
+                            alt="Nervous wizard under the moon" width="200"></a>
+                    <h3>Rincewind</h3>
+                    <!--  <p class="guide-card__subtitle">The reluctant wizard</p>
+                    <p class="guide-card__description">
+                        A cowardly wizard and an unlikely adventurer
+                        with a remarkable talent for surviving the impossible.
+                    </p> -->
+                </article>
 
-            <article class="guide-card">
-                <h3>Rincewind</h3>
-                <a class="guide-card__link" href="#rincewind"><img src="assets/images/Rincewind.png"
-                        alt="Nervous wizard under the moon" width="200"></a>
-                <p class="guide-card__subtitle">The reluctant wizard</p>
-                <p class="guide-card__description">
-                    A cowardly wizard and an unlikely adventurer
-                    with a remarkable talent for surviving the impossible.
-                </p>
-            </article>
+                <article class="guide-card">
+                    <a class="guide-card__link" href="#witches"><img src="assets/images/Witch.png"
+                            alt="An elderly witch beneath a crescent moon" width="200"></a>
+                    <h3>Esmerelda Weatherwax</h3>
+                    <!-- <p class="guide-card__subtitle">The powerful witch</p>
+                    <p class="guide-card__description">
+                        Ancient wisdom, peculiar customs,
+                        and a little headology go a long way.
+                    </p> -->
 
-            <article class="guide-card">
-                <h3>Esmerelda Weatherwax</h3>
-                <p class="guide-card__subtitle">The powerful witch</p>
-                <p class="guide-card__description">
-                    Ancient wisdom, peculiar customs,
-                    and a little headology go a long way.
-                </p>
-                <a class="guide-card__link" href="#witches"><img src="assets/images/Witch.png"
-                        alt="An elderly witch beneath a crescent moon" width="200"></a>
-            </article>
+                </article>
 
-            <article class="guide-card">
-                <h3>Samuel Vimes</h3>
-                <a class="guide-card__link" href="#city-watch"><img src="assets/images/Watch.png"
-                        alt="Stern watchman beneath the moonlit city" width="200"></a>
-                <p class="guide-card__subtitle">Commander of the Ankh-Morpork City Watch</p>
-                <p class="guide-card__description">
-                    Crooked streets, unlikely heroes,
-                    and a city where trouble never sleeps.
-                </p>
-            </article>
+                <article class="guide-card">
+                    <a class="guide-card__link" href="#city-watch"><img src="assets/images/Watch.png"
+                            alt="Stern watchman beneath the moonlit city" width="200"></a>
+                    <h3>Samuel Vimes</h3>
+                    <!--  <p class="guide-card__subtitle">Commander of the Ankh-Morpork City Watch</p>
+                    <p class="guide-card__description">
+                        Crooked streets, unlikely heroes,
+                        and a city where trouble never sleeps.
+                    </p> -->
+                </article>
 
-            <article class="guide-card">
-                <h3>Death</h3>
-                <a class="guide-card__link" href="#death"><img src="assets/images/Death.png"
-                        alt="Moonlit Reaper and his cat" width="200"></a>
-                <p class="guide-card__subtitle">Also known as the Grim Reaper</p>
-                <p class="guide-card__description">
-                    A cosmic entity with a curious fascination
-                    for humanity and a job that never ends.
-                </p>
-            </article>
+                <article class="guide-card">
+                    <a class="guide-card__link" href="#death"><img src="assets/images/Death.png"
+                            alt="Moonlit Reaper and his cat" width="200"></a>
+                    <h3>Death</h3>
+                    <!-- <p class="guide-card__subtitle">The Grim Reaper</p>
+                    <p class="guide-card__description">
+                        A cosmic entity with a curious fascination
+                        for humanity and a job that never ends.
+                    </p> -->
+                </article>
+            </div>
         </section>
-        <section id="books" aria-labelledby="books-title">
+        <section id="books" aria-labelledby="books-title" class="books">
             <article id="rincewind">
                 <h2>Rincewind</h2>
                 <p>The main character of this series is Rincewind, a cowardly wizard who, after years of studying at the
@@ -108,35 +111,43 @@
                     encounter becomes the starting point of their adventures.</p>
                 <div class="book-card">
                     <h3>The Colour of Magic</h3>
-                    <img src="assets/images/rincewind/TheColourOfMagic.jpg" alt="Cover of The Colour of Magic by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/TheColourOfMagic.jpg"
+                        alt="Cover of The Colour of Magic by Terry Pratchett" width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>The Light Fantastic</h3>
-                    <img src="assets/images/rincewind/TheLightFantastic.jpg" alt="Cover of The Light Fantastic by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/TheLightFantastic.jpg"
+                        alt="Cover of The Light Fantastic by Terry Pratchett" width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Sourcery</h3>
-                    <img src="assets/images/rincewind/Sourcery.jpg" alt="Cover of Sourcery by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/Sourcery.jpg" alt="Cover of Sourcery by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Eric</h3>
-                    <img src="assets/images/rincewind/Eric.jpg" alt="Cover of Eric by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/Eric.jpg" alt="Cover of Eric by Terry Pratchett" width="200"
+                        loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Interesting Times</h3>
-                    <img src="assets/images/rincewind/InterestingTimes.jpg" alt="Cover of Interesting Times by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/InterestingTimes.jpg"
+                        alt="Cover of Interesting Times by Terry Pratchett" width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>The Last Continent</h3>
-                    <img src="assets/images/rincewind/TheLastContinent.jpg" alt="Cover of The Last Continent by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/TheLastContinent.jpg"
+                        alt="Cover of The Last Continent by Terry Pratchett" width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>The Last Hero</h3>
-                    <img src="assets/images/rincewind/TheLastHero.jpg" alt="Cover of The Last Hero by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/TheLastHero.jpg" alt="Cover of The Last Hero by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Unseen Academicals</h3>
-                    <img src="assets/images/rincewind/UnseenAcademicals.jpg" alt="Cover of Unseen Academicals by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/rincewind/UnseenAcademicals.jpg"
+                        alt="Cover of Unseen Academicals by Terry Pratchett" width="200" loading="lazy">
                 </div>
             </article>
             <article id="witches">
@@ -150,27 +161,33 @@
                     features Granny Weatherwax, whose adventures show the differences between witches and wizards.</p>
                 <div class="book-card">
                     <h3>Equal Rites</h3>
-                    <img src="assets/images/witches/EqualRites.jpg" alt="Cover of Equal Rites by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/witches/EqualRites.jpg" alt="Cover of Equal Rites by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Wyrd Sisters</h3>
-                    <img src="assets/images/witches/WyrdSisters.jpg" alt="Cover of Wyrd Sisters by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/witches/WyrdSisters.jpg" alt="Cover of Wyrd Sisters by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Witches Abroad</h3>
-                    <img src="assets/images/witches/WitchesAbroad.jpg" alt="Cover of Witches Abroad by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/witches/WitchesAbroad.jpg" alt="Cover of Witches Abroad by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Lords and Ladies</h3>
-                    <img src="assets/images/witches/LordsAndLadies.jpg" alt="Cover of Lords and Ladies by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/witches/LordsAndLadies.jpg"
+                        alt="Cover of Lords and Ladies by Terry Pratchett" width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Maskerade</h3>
-                    <img src="assets/images/witches/Maskerade.jpg" alt="Cover of Maskerade by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/witches/Maskerade.jpg" alt="Cover of Maskerade by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Carpe Jugulum</h3>
-                    <img src="assets/images/witches/CarpeJugulum.jpg" alt="Cover of Carpe Jugulum by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/witches/CarpeJugulum.jpg" alt="Cover of Carpe Jugulum by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
             </article>
             <article id="city-watch">
@@ -182,64 +199,78 @@
                     city welcomes a new king.</p>
                 <div class="book-card">
                     <h3>Guards! Guards!</h3>
-                    <img src="assets/images/watch/GuardsGuards.jpg" alt="Cover of Guards! Guards! by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/GuardsGuards.jpg" alt="Cover of Guards! Guards! by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Men at Arms</h3>
-                    <img src="assets/images/watch/MenAtArms.jpg" alt="Cover of Men at Arms by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/MenAtArms.jpg" alt="Cover of Men at Arms by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Feet of Clay</h3>
-                    <img src="assets/images/watch/FeetOfClay.jpg" alt="Cover of Feet of Clay by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/FeetOfClay.jpg" alt="Cover of Feet of Clay by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Jingo</h3>
-                    <img src="assets/images/watch/Jingo.jpg" alt="Cover of Jingo by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/Jingo.jpg" alt="Cover of Jingo by Terry Pratchett" width="200"
+                        loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>The Fifth Elephant</h3>
-                    <img src="assets/images/watch/TheFifthElephant.jpg" alt="Cover of The Fifth Elephant by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/TheFifthElephant.jpg"
+                        alt="Cover of The Fifth Elephant by Terry Pratchett" width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Night Watch</h3>
-                    <img src="assets/images/watch/NightWatch.jpg" alt="Cover of Night Watch by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/NightWatch.jpg" alt="Cover of Night Watch by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Thud!</h3>
-                    <img src="assets/images/watch/Thud.jpg" alt="Cover of Thud! by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/Thud.jpg" alt="Cover of Thud! by Terry Pratchett" width="200"
+                        loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Snuff</h3>
-                    <img src="assets/images/watch/Snuff.jpg" alt="Cover of Snuff by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/watch/Snuff.jpg" alt="Cover of Snuff by Terry Pratchett" width="200"
+                        loading="lazy">
                 </div>
             </article>
             <article id="death">
                 <h2>Death</h2>
                 <p>
-                    In Terry Pratchett's books, Death is not particularly
+                    In Terry Pratchett's books, the anthropomorphic personification of Death is not particularly
                     frightening. He simply does his job. He has his own
                     interests and weaknesses, including cats, cooking,
-                    and games of chance.
+                    and games of chance.He appears in most of the Discworld novels, and yet He also has a series of His
+                    own, which begins with the story of Mort, His apprentice, a sixteen-year-old boy.
                 </p>
                 <div class="book-card">
                     <h3>Mort</h3>
-                    <img src="assets/images/death/Mort.jpg" alt="Cover of Mort by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/death/Mort.jpg" alt="Cover of Mort by Terry Pratchett" width="200"
+                        loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Reaper Man</h3>
-                    <img src="assets/images/death/ReaperMan.jpg" alt="Cover of Reaper Man by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/death/ReaperMan.jpg" alt="Cover of Reaper Man by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Soul Music</h3>
-                    <img src="assets/images/death/SoulMusic.jpg" alt="Cover of Soul Music by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/death/SoulMusic.jpg" alt="Cover of Soul Music by Terry Pratchett"
+                        width="200" loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>Hogfather</h3>
-                    <img src="assets/images/death/Hogfather.jpg" alt="Cover of Hogfather by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/death/Hogfather.jpg" alt="Cover of Hogfather by Terry Pratchett" width="200"
+                        loading="lazy">
                 </div>
                 <div class="book-card">
                     <h3>The Thief of Time</h3>
-                    <img src="assets/images/death/TheThiefOfTime.jpg" alt="Cover of The Thief of Time by Terry Pratchett" width="200" loading="lazy">
+                    <img src="assets/images/death/TheThiefOfTime.jpg"
+                        alt="Cover of The Thief of Time by Terry Pratchett" width="200" loading="lazy">
                 </div>
             </article>
         </section>

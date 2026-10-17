@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Design tokens */
+:root {
+    /* Colors */
+    --color-background: #101D30;
+    --color-background-alt: #17283D;
+    --color-text: #F0E8D7;
+    --color-text-muted: #C2C8D0;
+    --color-accent: #D6BD85;
+    --color-border: #426078;
+    --color-focus: #F4D58D;
+
+    /* Spacing */
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+    --space-xl: 4rem;
+
+    /* Typography */
+    --font-body: "PT Serif", serif;
+    --font-heading: "Modern Antiqua", serif;
+
+    /* Layout */
+    --page-width: 1100px;
+}
+
+/* Base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Site header */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg) var(--space-sm);
+    background:
+        linear-gradient(rgba(23, 40, 61, 0.7), rgba(23, 40, 61, 0.7)),
+        url("../assets/images/background.jpeg") center / cover;
+}
+
+.site-header__author {
+    margin: 0 0 var(--space-sm);
+    color: var(--color-accent);
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+
+.site-header__title {
+    margin: 0;
+    color: var(--color-text);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100% - 2rem, var(--page-width));
+    margin-inline: auto;
+    padding: var(--space-md);
+}
+
+.hero p {
+    max-width: 100ch;
+    margin: 0.5em 0;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.hero h2 {
+    text-align: center;
+}
+
+.hero img {
+    width: min(100%, 400px);
+    margin-block: var(--space-md);
+}
+
+/* Character section */
+.character-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100% - 2rem, var(--page-width));
+    margin-inline: auto;
+    padding-block: var(--space-sm);
+}
+
+.character-selection p {
+    max-width: 100ch;
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.grid-container-characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: var(--space-md);
+    width: 100%;
+    margin-top: var(--space-md);
+}
+
+/* Character cards */
+.guide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    min-width: 0;
+    padding: var(--space-sm);
+    background-color: var(--color-background-alt);
+    border: 1px solid var(--color-accent);
+    text-align: center;
+}
+
+.guide-card:hover{
+     transform: translateY(-10px);
+}
+
+.guide-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+}
+
+.guide-card__link {
+    display: block;
+    width: 100%;
+}
+
+.guide-card img {
+    width: 100%;
+    border: 1px solid var(--color-accent);
+}
+
+.books {
+    width: min(100% - 2rem, var(--page-width));
+    margin-inline: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.books p {
+    max-width: 100ch;
+    margin: 0.5em 0;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.books h2 {
+    text-align: center;
+}
