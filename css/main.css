@@ -64,7 +64,7 @@ html {
 body {
     min-height: 100vh;
     font-family: "PT Serif", serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-background);
@@ -76,7 +76,10 @@ h2,
 h3 {
     font-family: "Modern Antiqua", serif;
     line-height: 1.2;
+    text-align: center;
 }
+
+
 
 /* skip-link */
 .skip-link {
@@ -102,6 +105,34 @@ main,
     margin-inline: auto;
 }
 
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--space-md);
+}
+
+.hero,
+.guide-intro,
+.book-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    margin-block-start: var(--space-lg);
+}
+
+.hero p,
+.guide-intro p,
+.book-intro p {
+    max-width: min(100%, 80ch);
+    margin-inline: auto;
+    text-align: center;
+}
+
+
 section {
     margin-block: var(--space-2xl);
 }
@@ -121,9 +152,16 @@ p {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--space-lg);
+    margin-block-start: clamp(var(--space-lg), 5vw, var(--space-xl));
 }
 
-
+#guide {
+    margin-block-end: clamp(
+        5rem,
+        10vw,
+        10rem
+    );
+}
 /* cards */
 
 .guide-card {
@@ -157,7 +195,9 @@ h3 {
     align-items: center;
 }
 
-.book-card > p {
+.book-card>img {}
+
+.book-card>p {
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
@@ -181,4 +221,6 @@ h3 {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+
 }
