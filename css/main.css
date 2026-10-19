@@ -77,6 +77,12 @@ h3 {
     font-family: "Modern Antiqua", serif;
     line-height: 1.2;
     text-align: center;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
+}
+
+.author {
+    color: var(--color-accent);
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -99,8 +105,8 @@ h3 {
 
 /* layout */
 
-main,
-.site-header {
+
+main {
     width: min(100% - 2rem, var(--page-width));
     margin-inline: auto;
 }
@@ -109,8 +115,11 @@ main,
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: var(--space-md);
+    padding: var(--space-2xl) var(--space-md);
+    background: linear-gradient(rgba(16, 29, 48, 0.50)70%, var(--color-background)), url("../assets/images/background.jpeg") center no-repeat;
+
 }
+
 
 .hero,
 .guide-intro,
@@ -122,6 +131,21 @@ main,
 
 .hero-image {
     margin-block-start: var(--space-lg);
+    animation: turtle-float 5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+
+@keyframes turtle-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .hero p,
@@ -137,10 +161,20 @@ section {
     margin-block: var(--space-2xl);
 }
 
-h1,
+h1 {
+    margin-block-end: var(--space-2xl);
+}
+
 h2,
 h3 {
     margin-block-end: var(--space-md);
+}
+
+h1 {
+    color: var(--color-text);
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.6),
+        0 0 18px rgba(214, 189, 133, 0.2);
 }
 
 p {
@@ -154,14 +188,11 @@ p {
     gap: var(--space-lg);
     margin-block-start: clamp(var(--space-lg), 5vw, var(--space-xl));
 }
-
+/* 
 #guide {
-    margin-block-end: clamp(
-        5rem,
-        10vw,
-        10rem
-    );
+    margin-block-end: clamp(10rem, 15vw, 18rem);
 }
+ */
 /* cards */
 
 .guide-card {
@@ -176,7 +207,23 @@ p {
     width: 100%;
     max-width: 250px;
     margin-inline: auto;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 250ms ease,
+        box-shadow 250ms ease,
+        background-color 250ms ease;
+
 }
+
+.guide-card:hover,
+.guide-card:focus
+ {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+        background-color: #1D3048;
+    }
 
 .guide-card__name,
 h3 {
@@ -223,4 +270,18 @@ h3 {
     }
 
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__image {
+        animation: none;
+    }
+
+    .guide-card {
+        transition: none;
+    }
+
+    .guide-card:hover {
+        transform: none;
+    }
 }
