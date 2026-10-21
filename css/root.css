@@ -1,0 +1,42 @@
+/* design tokens */
+:root {
+    /* colours */
+    --color-background: #101D30;
+    --color-background-alt: #17283D;
+    --color-background-hover: #1D3048;
+    --color-border: #426078;
+    --color-text: #F0E8D7;
+    --color-text-muted: #C2C8D0;
+    --color-accent: #F4D58D;
+    --color-focus: #D4AF37;
+
+    /* spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+
+    /* layout */
+    --page-width: 1100px;
+
+    /* typography */
+    --font-body: "PT Serif", serif;
+    --font-heading: "Modern Antiqua", serif;
+    --font-size-body: 1.125rem;
+    --font-size-small: 0.9rem;
+    --font-size-card-title: 1rem;
+    --line-height-body: 1.6;
+    --line-height-heading: 1.2;
+
+    /* borders and shadows */
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    
+    --shadow-card:
+        0 4px 12px rgba(128, 6, 6, 0.2);
+    --shadow-card-hover:
+        0 12px 24px rgba(0, 0, 0, 0.35);
+    --shadow-text: 0 3px 8px rgba(0, 0, 0, 0.45);
+}
